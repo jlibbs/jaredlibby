@@ -1,6 +1,0 @@
-{
-  "name": "Adaptive Product Model - Jared Libby",
-  "description": "A clean, lightweight, semantic refactor of the Adaptive Product Model article by Jared Libby, powered by modern CSS Grid and Flexbox with zero div bloat.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
