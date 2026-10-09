@@ -1,0 +1,22 @@
+---
+tokens:
+  c-primary: "#1A3636"
+  c-slate-teal: "#384D4D"
+  c-muted-sage: "#678C8C"
+  c-soft-aqua: "#95CCCC"
+  c-rust-red: "#B33C1B"
+  c-white: "#ffffff"
+  c-bg-warm: "#F7F5F2"
+  font-serif: "'Playfair Display', Georgia, 'Times New Roman', serif"
+  font-sans: "'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+  container-narrow: "680px"
+  container-main: "720px"
+  container-wide: "856px"
+  container-max: "1200px"
+  header-height: "128px"
+  section-pad-y: "clamp(3rem, 6vw, 5rem)"
+  section-pad-x: "clamp(1.25rem, 5vw, 2.5rem)"
+  gap-md: "1.5rem"
+  gap-lg: "2.5rem"
+  transition-smooth: "200ms cubic-bezier(0.16, 1, 0.3, 1)"
+---
