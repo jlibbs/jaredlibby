@@ -454,57 +454,97 @@ strong, b {
   text-align: left;
 }
 
-/* Expertise Section */
-.expertise-section {
-  background: var(--c-white);
-  padding-bottom: 56px;
+/* Core Disciplines Section */
+.core-disciplines-section {
+  padding: var(--spacing-spacing-10) var(--spacing-spacing-6) var(--spacing-spacing-12);
+  background: var(--color-white);
+  display: flex;
+  justify-content: center;
 }
 
-.divider {
+.core-disciplines-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-spacing-10);
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.discipline-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-spacing-6);
+  width: 100%;
+}
+
+.discipline-intro-text {
+  font-size: var(--type-body-size);
+  font-family: var(--type-font-family-raleway);
+  font-weight: var(--type-body-weight);
+  color: var(--color-brand-800);
+  line-height: 1.5;
+  text-align: left;
+  max-width: 672px;
+}
+
+.discipline-divider {
   width: 100%;
   height: 1px;
-  background: var(--c-soft-aqua);
-  margin: 16px 0;
+  background: var(--color-brand-500);
 }
 
-.expertise-list {
+.discipline-list {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: var(--spacing-spacing-10);
   width: 100%;
-  margin-top: 32px;
 }
 
-.expertise-item {
+.discipline-item {
   display: flex;
-  gap: 40px;
+  gap: var(--spacing-spacing-10);
   align-items: flex-start;
+  width: 100%;
 }
 
-.expertise-icon {
-  width: 176px;
-  height: 120px;
-  position: relative;
+.discipline-icon {
+  width: 174px;
+  height: 117px;
   flex-shrink: 0;
-  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.expertise-text-content {
+.discipline-icon svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.discipline-text {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--spacing-spacing-6);
+  flex: 1;
 }
 
-.expertise-title {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 24px;
+.discipline-title {
+  font-size: var(--type-font-size-2xl);
+  font-family: var(--type-font-family-playfair);
+  font-weight: var(--type-heading-sm-weight);
+  color: var(--color-brand-800);
+  line-height: 1.15;
 }
 
-.expertise-desc {
-  font-size: 16px;
-  line-height: 24px;
-  max-width: 706px;
+.discipline-desc {
+  font-size: var(--type-body-size);
+  font-family: var(--type-font-family-raleway);
+  font-weight: var(--type-body-weight);
+  color: var(--color-brand-800);
+  line-height: 1.5;
 }
 
 /* CTA Footer */
@@ -660,17 +700,22 @@ strong, b {
     height: 138px;
   }
 
-  .expertise-list {
-    gap: 32px;
+  .discipline-list {
+    gap: var(--spacing-spacing-8);
   }
   
-  .expertise-item {
+  .discipline-item {
     flex-direction: column;
-    gap: 24px;
+    gap: var(--spacing-spacing-6);
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
   
+  .discipline-title {
+    text-align: center;
+    width: 100%;
+  }
+
   .tag {
     width: 100%;
   }
