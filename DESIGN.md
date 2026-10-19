@@ -16,7 +16,7 @@ tokens:
 
   # colour/primitive
   color-white: "#ffffff"
-  color-black: "#384d4d"
+  color-black: "#475554"
   color-brand-50: "#eff7f7"
   color-brand-100: "#e5f3f3"
   color-brand-200: "#d9eded"
