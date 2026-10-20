@@ -217,7 +217,7 @@ strong, b {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: var(--color-brand-500);
+  background: var(--color-brand-800);
 }
 
 .hero-sub img {
@@ -488,6 +488,302 @@ strong, b {
   color: var(--color-brand-800);
   line-height: 1.5;
   text-align: left;
+}
+
+/* Sectors Section */
+.sectors-section {
+  padding: var(--spacing-spacing-10) var(--spacing-spacing-6);
+  background: var(--color-white);
+  display: flex;
+  justify-content: center;
+}
+
+.sectors-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-spacing-10);
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.sectors-intro {
+  padding: 0 124px;
+  text-align: left;
+  font-size: var(--type-body-size);
+  font-family: var(--type-font-family-raleway);
+  font-weight: var(--type-body-weight);
+  color: var(--color-brand-800);
+  line-height: 1.5;
+  width: 100%;
+}
+
+.sectors-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-spacing-6);
+  width: 100%;
+}
+
+.sectors-label {
+  background: var(--color-brand-800);
+  color: var(--color-white);
+  padding: 0 var(--spacing-spacing-4);
+  font-size: var(--type-font-size-sm);
+  font-family: var(--type-font-family-raleway);
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 240px;
+}
+
+.sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-spacing-2) var(--spacing-spacing-8);
+  width: 100%;
+}
+
+.sector-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-spacing-2);
+  color: var(--color-brand-800);
+  font-size: var(--type-body-size);
+  font-family: var(--type-font-family-raleway);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.sector-item img {
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* Accomplishments Section */
+.accomplishments-section {
+  padding: var(--spacing-spacing-10) var(--spacing-spacing-6);
+  background: var(--color-neutral-50);
+  display: flex;
+  justify-content: center;
+}
+
+.accomplishments-container {
+  background: var(--color-brand-300);
+  padding: var(--spacing-spacing-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-spacing-6);
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.accomplishments-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-spacing-6);
+  width: 100%;
+}
+
+.accomplishments-title {
+  color: var(--color-brand-800);
+  font-size: var(--type-heading-lg-size);
+  font-family: var(--type-font-family-playfair);
+  font-weight: var(--type-heading-lg-weight);
+  text-align: center;
+  line-height: 1.15;
+}
+
+.accomplishments-intro {
+  color: var(--color-brand-800);
+  font-size: var(--type-body-size);
+  font-family: var(--type-font-family-raleway);
+  font-weight: var(--type-body-weight);
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 124px;
+  width: 100%;
+}
+
+.accomplishments-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-spacing-4);
+  width: 100%;
+}
+
+.accomplishment-card {
+  background: var(--color-white);
+  padding: var(--spacing-spacing-4);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-spacing-6);
+}
+
+.accomplishment-icon {
+  flex-shrink: 0;
+  width: 136px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accomplishment-icon img {
+  max-width: 100%;
+  height: auto;
+}
+
+.accomplishment-text {
+  color: var(--color-brand-800);
+  font-size: var(--type-body-size);
+  font-family: var(--type-font-family-raleway);
+  font-weight: var(--type-body-weight);
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Experience Section */
+.experience-section {
+  padding: var(--spacing-spacing-10) var(--spacing-spacing-6) var(--spacing-spacing-12);
+  background: var(--color-white);
+  display: flex;
+  justify-content: center;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-spacing-10);
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.experience-title {
+  color: var(--color-brand-800);
+  font-size: var(--type-heading-lg-size);
+  font-family: var(--type-font-family-playfair);
+  font-weight: var(--type-heading-lg-weight);
+  text-align: center;
+  line-height: 1.15;
+}
+
+.experience-text {
+  color: var(--color-brand-800);
+  font-size: var(--type-body-size);
+  font-family: var(--type-font-family-raleway);
+  font-weight: var(--type-body-weight);
+  line-height: 1.5;
+  padding: 0 124px;
+  width: 100%;
+}
+
+.experience-text p {
+  margin-bottom: var(--spacing-spacing-4);
+}
+
+.experience-text p:last-child {
+  margin-bottom: 0;
+}
+
+.experience-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--color-brand-500);
+}
+
+.experience-timeline {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Brands Section */
+.brands-section {
+  padding: var(--spacing-spacing-10) var(--spacing-spacing-6) var(--spacing-spacing-6);
+  background: var(--color-neutral-50);
+  display: flex;
+  justify-content: center;
+}
+
+.brands-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-spacing-5);
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.brands-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-spacing-4);
+  padding-bottom: var(--spacing-spacing-8);
+  width: 100%;
+}
+
+.brands-label {
+  background: var(--color-brand-800);
+  color: var(--color-white);
+  padding: 0 var(--spacing-spacing-4);
+  font-size: var(--type-font-size-sm);
+  font-family: var(--type-font-family-raleway);
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 240px;
+}
+
+.brands-title {
+  color: var(--color-brand-800);
+  font-size: var(--type-heading-lg-size);
+  font-family: var(--type-font-family-playfair);
+  font-weight: var(--type-heading-lg-weight);
+  text-align: center;
+  line-height: 1.15;
+}
+
+.brands-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--color-brand-500);
+}
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+}
+
+.brand-logo {
+  height: 136px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 /* Approach Section */
@@ -972,6 +1268,97 @@ strong, b {
   .card-icon {
     width: 160px;
     height: 138px;
+  }
+
+  .sectors-section {
+    padding: var(--spacing-spacing-6);
+  }
+
+  .sectors-content {
+    gap: var(--spacing-spacing-6);
+  }
+
+  .sectors-intro {
+    padding: 0;
+  }
+
+  .sectors-block {
+    gap: var(--spacing-spacing-4);
+  }
+
+  .sectors-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-spacing-2);
+  }
+
+  .accomplishments-section {
+    padding: var(--spacing-spacing-6);
+  }
+
+  .accomplishments-container {
+    padding: var(--spacing-spacing-4);
+    gap: var(--spacing-spacing-4);
+  }
+
+  .accomplishments-header {
+    gap: var(--spacing-spacing-6);
+  }
+
+  .accomplishments-title {
+    font-size: var(--type-font-size-2xl);
+  }
+
+  .accomplishments-intro {
+    padding: 0;
+    text-align: left;
+  }
+
+  .accomplishments-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .accomplishment-card {
+    flex-direction: column;
+  }
+
+  .accomplishment-icon {
+    width: auto;
+  }
+
+  .experience-section {
+    padding: var(--spacing-spacing-6) var(--spacing-spacing-6) var(--spacing-spacing-8);
+  }
+
+  .experience-content {
+    gap: var(--spacing-spacing-6);
+  }
+
+  .experience-title {
+    font-size: var(--type-font-size-2xl);
+  }
+
+  .experience-text {
+    padding: 0;
+  }
+
+  .brands-section {
+    padding: var(--spacing-spacing-10) var(--spacing-spacing-6) var(--spacing-spacing-6);
+  }
+
+  .brands-content {
+    gap: var(--spacing-spacing-6);
+  }
+
+  .brands-header {
+    padding-bottom: var(--spacing-spacing-4);
+  }
+
+  .brands-title {
+    font-size: var(--type-font-size-2xl);
+  }
+
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .approach-section {
