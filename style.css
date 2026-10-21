@@ -223,11 +223,12 @@ strong, b {
 
 .hero-sub img {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: -292px; /* <-- Adjust your vertical offset here */
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  min-width: 1440px;
+  height: auto;
   z-index: 1;
 }
 
@@ -1015,6 +1016,34 @@ u {
   align-items: center;
   gap: var(--spacing-spacing-6);
   width: 100%;
+  max-width: 920px;
+  background: var(--color-neutral-50);
+}
+
+.discipline-hr-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.discipline-divider-thick {
+  width: 100%;
+  height: 4px;
+  background: var(--color-white);
+}
+
+.discipline-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--color-brand-500);
+}
+
+.discipline-intro-content {
+  width: 100%;
+  padding: 0 var(--spacing-spacing-6);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .discipline-intro-text {
@@ -1024,13 +1053,8 @@ u {
   color: var(--color-brand-800);
   line-height: 1.5;
   text-align: left;
-  max-width: 672px;
-}
-
-.discipline-divider {
   width: 100%;
-  height: 1px;
-  background: var(--color-brand-500);
+  max-width: 872px;
 }
 
 .discipline-list {
@@ -1103,21 +1127,22 @@ u {
 
 .cta-bg-image {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  bottom: -72px;
+  left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  min-width: 1440px;
+    height: auto;
   z-index: 1;
   mix-blend-mode: luminosity;
   opacity: 0.8;
-}
-
+  }
+  
 .cta-content {
   position: relative;
   z-index: 2;
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
   align-items: center;
   gap: var(--spacing-spacing-10);
   width: 100%;
@@ -1125,7 +1150,6 @@ u {
   padding: 0 var(--spacing-spacing-6);
   margin: 0 auto;
 }
-
 .cta-title {
   color: var(--color-white);
   font-size: var(--type-font-size-2xl);
@@ -1198,7 +1222,7 @@ u {
   }
   
   .hero img {
-    bottom: -81px;
+    bottom: -80px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -1478,3 +1502,4 @@ a[href*="netlify.com"] {
   opacity: 0 !important;
   pointer-events: none !important;
 }
+
