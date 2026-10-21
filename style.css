@@ -185,11 +185,12 @@ strong, b {
 
 .hero img {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: -290px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  min-width: 1440px;
+  height: auto;
   z-index: 1;
 }
 
@@ -198,7 +199,7 @@ strong, b {
   z-index: 2;
   width: 100%;
   max-width: 920px;
-  padding: 0 var(--spacing-spacing-6);
+  padding: 0 var(--spacing-spacing-10);
   margin: 0 auto;
 }
 
@@ -235,7 +236,7 @@ strong, b {
   z-index: 2;
   width: 100%;
   max-width: 920px;
-  padding: 0 var(--spacing-spacing-6);
+  padding: 0 var(--spacing-spacing-10);
   margin: 0 auto;
 }
 
@@ -439,13 +440,13 @@ strong, b {
 
 .card {
   background: var(--color-white);
-  padding: var(--spacing-spacing-6) var(--spacing-spacing-5) var(--spacing-spacing-8) var(--spacing-spacing-5);
+  padding: var(--spacing-spacing-6) var(--spacing-spacing-5) var(--spacing-spacing-6) var(--spacing-spacing-5);
   display: flex;
   flex-direction: column;
   align-items: center;
   flex: 1 1 0;
   min-width: 0;
-  gap: var(--spacing-spacing-6);
+  gap: var(--spacing-spacing-5);
   text-align: center;
   border-radius: var(--radius-radius-md);
   transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
@@ -943,8 +944,11 @@ strong, b {
   font-weight: 700;
 }
 
-.text-underline {
+u {
   text-decoration: underline;
+  text-decoration-color: #95cccc;
+  text-decoration-style: dotted;
+  text-underline-offset: 4px;
 }
 
 .track-image {
@@ -1135,30 +1139,48 @@ strong, b {
   justify-content: center;
   align-items: center;
   background: var(--color-brand-300);
-  color: var(--color-black);
+  color: var(--color-brand-800);
   font-size: var(--type-body-size);
   font-family: var(--type-font-family-raleway);
   font-weight: 700;
   text-transform: uppercase;
-  padding: var(--spacing-spacing-3-5) 18px;
+  padding: 14px 18px;
   border-radius: var(--radius-radius-lg);
-  box-shadow: -8px -12px 0px var(--color-rust-red-500);
+  box-shadow: -12px -12px 0px var(--color-rust-red-500);
   outline: 4px solid var(--color-white);
   text-decoration: none;
   transition: all var(--transition-smooth);
 }
 
-.btn-primary:hover, 
+.btn-primary:hover {
+  background: var(--color-neutral-50);
+  outline-color: var(--color-neutral-50);
+  box-shadow: -12px -12px 0px var(--color-rust-red-500);
+  color: var(--color-rust-red-500);
+  transform: none;
+}
+
 .btn-primary:focus-visible {
-  background: var(--color-brand-400);
-  outline-color: var(--color-brand-100);
-  box-shadow: -6px -9px 0px var(--color-rust-red-500);
-  transform: translate(-2px, -3px);
+  background: var(--color-brand-300);
+  outline-color: var(--color-brand-800);
+  box-shadow: -12px -12px 0px var(--color-rust-red-500);
+  color: var(--color-brand-800);
+  transform: none;
 }
 
 .btn-primary:active {
   box-shadow: 0px 0px 0px var(--color-rust-red-500);
-  transform: translate(-8px, -12px);
+  transform: translate(-12px, -12px);
+}
+
+.btn-primary:disabled,
+.btn-primary[disabled] {
+  background: var(--color-brand-800);
+  outline-color: var(--color-brand-800);
+  box-shadow: -12px -12px 0px var(--color-rust-red-500);
+  color: var(--color-brand-600);
+  cursor: not-allowed;
+  transform: none;
 }
 
 /* Mobile Media Query */
@@ -1173,6 +1195,15 @@ strong, b {
   .hero {
     height: 96px; /* Restored original home height */
     align-items: center;
+  }
+  
+  .hero img {
+    bottom: -81px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    min-width: 100vw;
+    height: auto;
   }
   
   .hero-title {
@@ -1262,7 +1293,7 @@ strong, b {
   }
   
   .card {
-    padding: var(--spacing-spacing-6) var(--spacing-spacing-5) var(--spacing-spacing-8) var(--spacing-spacing-5);
+    padding: var(--spacing-spacing-6) var(--spacing-spacing-5) var(--spacing-spacing-6) var(--spacing-spacing-5);
   }
   
   .card-icon {
@@ -1432,7 +1463,18 @@ strong, b {
   }
 
   .cta-title {
-    font-size: var(--type-font-size-lg);
+    font-size: var(--type-heading-sm-size);
     font-family: var(--type-font-family-playfair);
+    font-weight: var(--type-heading-sm-weight);
   }
+}
+
+/* Netlify Badge Hide */
+[id^="netlify-"],
+[class^="netlify-"],
+a[href*="netlify.com"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
