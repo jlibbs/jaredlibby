@@ -637,7 +637,8 @@ strong, b {
   width: 136px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 6px;
 }
 
 .accomplishment-icon img {
@@ -1380,6 +1381,7 @@ u {
 
   .accomplishment-icon {
     width: auto;
+    padding-top: 0;
   }
 
   .experience-section {
@@ -1494,7 +1496,7 @@ u {
 
   .cta-title {
     font-size: var(--type-heading-sm-size);
-    font-family: var(--type-font-family-playfair);
+    font-family: var(--type-font-family-raleway);
     font-weight: var(--type-heading-sm-weight);
   }
 }
