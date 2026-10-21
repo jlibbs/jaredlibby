@@ -547,21 +547,39 @@ strong, b {
 }
 
 .sectors-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-spacing-2) var(--spacing-spacing-8);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.sectors-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
   width: 100%;
 }
 
 .sector-item {
+  flex: 1 1 0;
   display: flex;
   align-items: center;
-  gap: var(--spacing-spacing-2);
+  gap: 16px;
   color: var(--color-brand-800);
   font-size: var(--type-body-size);
   font-family: var(--type-font-family-raleway);
   font-weight: 700;
   line-height: 1.5;
+}
+
+.sector-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .sector-item img {
@@ -1343,8 +1361,20 @@ u {
   }
 
   .sectors-grid {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-spacing-2);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 345px;
+    margin: 0 auto;
+  }
+  
+  .sectors-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .sector-item {
+    gap: 12px;
   }
 
   .accomplishments-section {
