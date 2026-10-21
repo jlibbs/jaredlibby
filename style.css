@@ -628,7 +628,7 @@ strong, b {
   background: var(--color-white);
   padding: var(--spacing-spacing-4);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--spacing-spacing-6);
 }
 
@@ -1374,6 +1374,8 @@ u {
 
   .accomplishment-card {
     flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-spacing-4);
   }
 
   .accomplishment-icon {
@@ -1414,6 +1416,10 @@ u {
 
   .brands-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .brand-logo.hide-mobile {
+    display: none;
   }
 
   .approach-section {
