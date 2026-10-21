@@ -1531,13 +1531,22 @@ u {
   }
 }
 
-/* Netlify Badge Hide */
-[id^="netlify-"],
-[class^="netlify-"],
-a[href*="netlify.com"] {
+/* Nuclear Netlify Badge Hide */
+netlify-badge,
+[id*="netlify"],
+[class*="netlify"],
+a[href*="netlify.com"],
+a[href*="netlify.app"],
+img[src*="netlify.com"],
+img[src*="netlify.app"],
+a[title*="Netlify"] {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
   pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  position: absolute !important;
+  z-index: -9999 !important;
 }
 
